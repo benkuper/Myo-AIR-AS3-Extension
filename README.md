@@ -1,5 +1,5 @@
-##MyoController
-~~~
+## MyoController
+
 AIR Native Extension for Myo
 
 This library is in a very early stage and has not been tested as i didn't receive the Myo yet.
