@@ -28,6 +28,8 @@ class MyoData
 
 	double accel[3];
 	double gyro[3];
+
+	bool connected;
 	
 };
 
@@ -35,11 +37,13 @@ vector<MyoData *> myoDatas;
 
 string getMyoID(Myo *myo)
 {
+
 	return std::to_string((int)myo);
 }
 
 MyoData * getMyoData(Myo * myo)
 {
+	
 	for (size_t i = 0; i < myoDatas.size(); ++i) {
         // If two Myo pointers compare equal, they refer to the same Myo device.
 		if (myoDatas[i]->myo == myo) {
@@ -51,7 +55,19 @@ MyoData * getMyoData(Myo * myo)
 	return NULL;
 }
 
+int getMyoIndex(Myo *myo)
+{
 
+	for (size_t i = 0; i < myoDatas.size(); ++i) {
+        // If two Myo pointers compare equal, they refer to the same Myo device.
+		if (myoDatas[i]->myo == myo) {
+            return i;
+        }
+    }
+
+	printf("Myo Not found : %s\n",getMyoID(myo).c_str());
+	return -1;
+}
 
 
 MyoData * getMyoByMacAddress(const char * macAddress)
@@ -68,6 +84,13 @@ MyoData * getMyoByMacAddress(const char * macAddress)
 	return NULL;
 }
 
+void removeMyo(Myo * myo)
+{
+	int id = getMyoIndex(myo);
+	if(id != -1) myoDatas.erase(myoDatas.begin()+id);
+}
+
+
 
 class MyoListener : public myo::DeviceListener {
 public:
@@ -78,6 +101,7 @@ public:
 
 	void onPair(myo::Myo* myo, uint64_t timestamp, FirmwareVersion firmwareVersion)
     {
+		printf("Myo onPair \n");
 		MyoData * data = new MyoData();
 		data->myo = myo;
 		data->id = getMyoID(myo); //->macAddressAsString();
@@ -86,29 +110,37 @@ public:
 		data->roll = 0;
 		data->pose = "rest";
 		myoDatas.push_back(data);
+		
+		// Now that we've added it to our list, get our short ID for it and print it out.
+		printf("=> assigned ID : %s\n",data->id.c_str());
 
-
-        // Now that we've added it to our list, get our short ID for it and print it out.
-		printf("Myo paired, assigned ID : %s\n",data->id.c_str());
-
-        // Check whether this Myo device has been trained. It will only provide pose information if it's been trained.
-        /*
-		if (myo->isTrained()) {
-			printf("Myo %s is trained\n",myo->macAddressAsString().c_str());
-        } else {
-			printf("Myo %s is NOT trained\n",myo->macAddressAsString().c_str());
-        }
-		*/
     }
+
+	
+
+	void onUnpair (Myo *myo, uint64_t timestamp)
+	{
+		printf("Myo unpair\n");
+		removeMyo(myo);
+	}
 
 	 void onConnect(Myo* myo, uint64_t timestamp,FirmwareVersion firmwareVersion)
     {
 		printf("Myo %s has connected\n",getMyoID(myo).c_str());
+		MyoData * mData = getMyoData(myo);
+		if(mData != NULL) mData->connected = true;
+    }
+
+
+	void onDisconnect(Myo* myo, uint64_t timestamp)
+    {
+		printf("Myo %s has disconnected\n",getMyoID(myo).c_str());
+		MyoData * mData = getMyoData(myo);
+		if(mData != NULL) mData->connected = false;
     }
 
     void onPose(Myo* myo, uint64_t timestamp, myo::Pose pose)
     {
-		//int myoID = identifyMyo(myo);
 		
 		printf("Myo %s has detected pose : %s\n",getMyoID(myo).c_str(),pose.toString().c_str());
 		
@@ -119,10 +151,7 @@ public:
 
    
 
-    void onDisconnect(Myo* myo, uint64_t timestamp)
-    {
-		printf("Myo %s has disconnected\n",getMyoID(myo));
-    }
+    
 
     // onOrientationData() is called whenever the Myo device provides its current orientation, which is represented
     // as a unit quaternion.
@@ -255,25 +284,29 @@ extern "C"
 
 			//printf("MID= %s\n",mID);
 
-			FREObject data[11];
+			const int numParameters = 12;
+			FREObject data[numParameters];
+			
 			FRENewObjectFromUTF8(midl,mID,&data[0]); //id
-			FRENewObjectFromUTF8(pidl,pID,&data[1]); //pose
-			FRENewObjectFromDouble(mData->yaw,&data[2]); //yaw
-			FRENewObjectFromDouble(mData->pitch,&data[3]); //pitch
-			FRENewObjectFromDouble(mData->roll,&data[4]); //roll
+			FRENewObjectFromBool(mData->connected,&data[1]); //id
 
-			FRENewObjectFromDouble(mData->accel[0],&data[5]); //accelX
-			FRENewObjectFromDouble(mData->accel[1],&data[6]); //accelY
-			FRENewObjectFromDouble(mData->accel[2],&data[7]); //accelZ
+			FRENewObjectFromUTF8(pidl,pID,&data[2]); //pose
+			FRENewObjectFromDouble(mData->yaw,&data[3]); //yaw
+			FRENewObjectFromDouble(mData->pitch,&data[4]); //pitch
+			FRENewObjectFromDouble(mData->roll,&data[5]); //roll
 
-			FRENewObjectFromDouble(mData->gyro[0],&data[8]); //gyroX
-			FRENewObjectFromDouble(mData->gyro[1],&data[9]); //gyroY
-			FRENewObjectFromDouble(mData->gyro[2],&data[10]); //gyroZ
+			FRENewObjectFromDouble(mData->accel[0],&data[6]); //accelX
+			FRENewObjectFromDouble(mData->accel[1],&data[7]); //accelY
+			FRENewObjectFromDouble(mData->accel[2],&data[8]); //accelZ
+
+			FRENewObjectFromDouble(mData->gyro[0],&data[9]); //gyroX
+			FRENewObjectFromDouble(mData->gyro[1],&data[10]); //gyroY
+			FRENewObjectFromDouble(mData->gyro[2],&data[11]); //gyroZ
 
 
 			FREObject res;
-			FREResult fre = FRECallObjectMethod(controller,(const uint8_t*)"updateMyoData",11,data,&res,NULL); //AS3 updateMyoData(id:String,pose:String,yaw:Number,pitch:Number,roll:Number)
-			
+			FREResult fre = FRECallObjectMethod(controller,(const uint8_t*)"updateMyoData",numParameters,data,&res,NULL); //AS3 updateMyoData(id:String,pose:String,yaw:Number,pitch:Number,roll:Number)
+			 
 			//printf("Call method : %i\n",fre);
 		}
 		
@@ -344,7 +377,7 @@ extern "C"
 	// Flash Native Extensions stuff
 	void MyoContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToSet,  const FRENamedFunction** functionsToSet) { 
 
-		printf("** MyoExtension v0.3 by Ben Kuper **\n\n");
+		printf("** MyoExtension v0.4 by Ben Kuper **\n\n");
 
 		*numFunctionsToSet = 5; 
 

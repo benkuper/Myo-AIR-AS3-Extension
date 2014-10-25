@@ -47,8 +47,9 @@ package benkuper.nativeExtensions
 			}
 		}
 		
-		public function updateData(pose:String, y:Number,p:Number,r:Number, ax:Number,ay:Number,az:Number,gx:Number,gy:Number,gz:Number):void
+		public function updateData(connected:Boolean,pose:String, y:Number,p:Number,r:Number, ax:Number,ay:Number,az:Number,gx:Number,gy:Number,gz:Number):void
 		{
+			this.connected = connected;
 			this.pose = pose;
 			
 			yaw = y;

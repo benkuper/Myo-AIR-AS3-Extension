@@ -80,14 +80,14 @@ package benkuper.nativeExtensions
 			
 		}
 		
-		public function updateMyoData(id:String, pose:String, yaw:Number, pitch:Number, roll:Number,
+		public function updateMyoData(id:String, connected:Boolean, pose:String, yaw:Number, pitch:Number, roll:Number,
 												accelX:Number,accelY:Number,accelZ:Number,gyroX:Number,gyroY:Number,gyroZ:Number):void
 		{
 			//trace("[MyoController] Update myo data !", id, pose, yaw, pitch, roll);
 			var myo:Myo = getMyoByID(id);
 			if (myo == null) myo = addMyo(id);
 			
-			myo.updateData(pose, yaw, pitch, roll,accelX,accelY,accelZ,gyroX,gyroY,gyroZ);
+			myo.updateData(connected, pose, yaw, pitch, roll,accelX,accelY,accelZ,gyroX,gyroY,gyroZ);
 		}
 		
 		private function addMyo(myoID:String):Myo

@@ -107,7 +107,7 @@ package
 					break;
 					
 				case Myo.POSE_TWIST_IN:
-					color = 0x0000ff;
+					color = 0xff00ff;
 					break;
 			}
 			
