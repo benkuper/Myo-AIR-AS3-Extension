@@ -377,7 +377,7 @@ extern "C"
 	// Flash Native Extensions stuff
 	void MyoContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToSet,  const FRENamedFunction** functionsToSet) { 
 
-		printf("** MyoExtension v0.4 by Ben Kuper **\n\n");
+		printf("** MyoExtension v0.5 by Ben Kuper **\n\n");
 
 		*numFunctionsToSet = 5; 
 

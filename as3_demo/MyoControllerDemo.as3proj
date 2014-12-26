@@ -5,11 +5,11 @@
     <movie outputType="Application" />
     <movie input="" />
     <movie path="bin\MyoControllerDemo.swf" />
-    <movie fps="30" />
+    <movie fps="90" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="3" />
-    <movie minorVersion="9" />
+    <movie version="14" />
+    <movie minorVersion="0" />
     <movie platform="AIR" />
     <movie background="#FFFFFF" />
   </output>
