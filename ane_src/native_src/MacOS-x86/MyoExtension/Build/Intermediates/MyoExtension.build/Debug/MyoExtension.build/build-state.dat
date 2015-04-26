@@ -1,20 +1,426 @@
 TMyoExtension
-v7
+v6
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/Info.plist
-cCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386
+cProcessInfoPlistFile /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist
+cCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386
 cCpHeader MyoExtension/MyoExtension.h Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h
-cTouch /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework
+cPhaseScriptExecution Run\ Script /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.sh
+cTouch /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000533B9F35000000000000044C
+t1396416309
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000533B9F3500000000000001DE
+t1396416309
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000533B9F370000000000085C70
+t1396416311
+s547952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000533B9F3800000000000C9E38
+t1396416312
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000533B9F45000000000000681C
+t1396416325
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+c00000000533B9F45000000000006E8B0
+t1396416325
+s452784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+c00000000533B9F460000000000014EF8
+t1396416326
+s85752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c00000000533B9F460000000000004734
+t1396416326
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c00000000533B9F46000000000000FC6C
+t1396416326
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c00000000533B9F46000000000000F6A0
+t1396416326
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c00000000533B9F460000000000006254
+t1396416326
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c00000000533B9F46000000000000E0F8
+t1396416326
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000533B9F46000000000000D6DC
+t1396416326
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000533B9F460000000000006308
+t1396416326
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c00000000533B9F460000000000004050
+t1396416326
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000533B9F460000000000008570
+t1396416326
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c00000000533B9F460000000000005EA0
+t1396416326
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c00000000533B9F460000000000005FAC
+t1396416326
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c00000000533B9F460000000000004440
+t1396416326
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c00000000533B9F46000000000000AA28
+t1396416326
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c00000000533B9F460000000000003E2C
+t1396416326
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000533B9F460000000000030B04
+t1396416326
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000533B9F460000000000005E54
+t1396416326
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000533B9F460000000000006A90
+t1396416326
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c00000000533B9F4600000000000178AC
+t1396416326
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000533B9F46000000000001ADC8
+t1396416326
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c00000000533B9F46000000000001028C
+t1396416326
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000533B9F460000000000008800
+t1396416326
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c00000000533B9F460000000000011090
+t1396416326
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c00000000533B9F46000000000000882C
+t1396416326
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000533B9F4600000000000067AC
+t1396416326
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c00000000533B9F460000000000008DEC
+t1396416326
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000533B9F460000000000004C08
+t1396416326
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c00000000533B9F46000000000000439C
+t1396416326
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c00000000533B9F460000000000006768
+t1396416326
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000533B9F4600000000000172F4
+t1396416326
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000533B6DFC0000000000000ADC
+t1396403708
+s2780
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.eprintf.a
+c00000000533B6E070000000000000720
+t1396403719
+s1824
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c00000000533B9F790000000000001770
+t1396416377
+s6000
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c
+c00000000553D693B00000000000000CF
+t1430087995
+s207
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.LinkFileList
+c00000000553D693B00000000000001A9
+t1430087995
+s425
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o
+t1430089211
+s289720
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o
+t1430088044
+s2640
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.sh
+c00000000553D6B680000000000000027
+t1430088552
+s39
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework
+t1430089217
+s204
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h
+t1430087996
+s766
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension
+t1430089213
+s80076
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist
+t1430087995
+s1271
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist
+c00000000553D660600000000000003B2
+t1430087174
+s946
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.h
+c00000000553D660600000000000002FE
+t1430087174
+s766
+
+N/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm
+c00000000553D6DF40000000000003A6D
+t1430089204
+s14957
+
+N/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/include/FlashRuntimeExtensions.h
+c0000000054EEB6390000000000004D54
+t1424930361
+s19796
+
+N/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe AIR.framework/Adobe AIR
+c0000000054EEB6390000000001AB0324
+t1424930361
+s27984676
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/DeviceListener.hpp
+c0000000054B6B1B20000000000001F49
+t1421259186
+s8009
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Hub.hpp
+c0000000054B6B1B20000000000000D53
+t1421259186
+s3411
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Myo.hpp
+c0000000054B6B1B200000000000008E0
+t1421259186
+s2272
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Pose.hpp
+c0000000054B6B1B20000000000000741
+t1421259186
+s1857
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Quaternion.hpp
+c0000000054B6B1B20000000000001286
+t1421259186
+s4742
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Vector3.hpp
+c0000000054B6B1B20000000000000A87
+t1421259186
+s2695
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/detail/ThrowOnError.hpp
+c0000000054B6B1B20000000000000645
+t1421259186
+s1605
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Hub_impl.hpp
+c0000000054B6B1B2000000000000203F
+t1421259186
+s8255
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Myo_impl.hpp
+c0000000054B6B1B200000000000004AD
+t1421259186
+s1197
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Pose_impl.hpp
+c0000000054B6B1B20000000000000601
+t1421259186
+s1537
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/libmyo.h
+c0000000054B6B1B20000000000003513
+t1421259186
+s13587
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/libmyo/detail/visibility.h
+c0000000054B6B1B20000000000000357
+t1421259186
+s855
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/myo.hpp
+c0000000054B6B1B20000000000000186
+t1421259186
+s390
+
+N/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/myo
+c0000000054B6B32200000000001ADC70
+t1421259554
+s1760368
+
+CBuild AST from /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp
+r0
+
+CBuild AST from /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm
+r0
 
 CBuild AST from /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp
 r0
 
 CCheck dependencies
 r0
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb7b3db6c9548b941^3925dc6c9548b941^---0#1#1#--18"Check dependencies36"CE0E2BD3-CDAA-45F1-9204-90691901165D-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2a8c9546a6edba41^66c1a046a6edba41^---0#1#1#--18"Check dependencies36"AE8B3C45-CAA7-4AE4-9002-B142698EBB2C-
+
+CCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s451780852.702710
+e451780853.265160
+r1
+xCompileC
+xBuild/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.h
+d/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/include/FlashRuntimeExtensions.h
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/myo.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/DeviceListener.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Pose.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/libmyo.h
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/libmyo/detail/visibility.h
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Pose_impl.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Hub.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Hub_impl.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Myo.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Myo_impl.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/detail/ThrowOnError.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Quaternion.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Vector3.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Compile /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp197"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerd8f5b3f4a0edba41^3fe243f5a0edba41^---0#0#1#-19%DVTDocumentLocation2@147"file:///Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp0000000000000000^4129"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/benkuper/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-generated-files.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-own-target-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-all-target-headers.hmap -iquote /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-project-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/i386 -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources -F/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/Dev/SDKs/MyoSDK -F/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac -MMD -MT dependencies -MF /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.d --serialize-diagnostics /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.dia -c /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.cpp -o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o36"88ADCDAD-B685-4A97-AC61-6E90786A7374-
+bC5D96BD6-ABF7-4857-81CB-49694D1C6AE2
+
+CCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s451782010.532092
+e451782011.944015
+r1
+xCompileC
+xBuild/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.h
+d/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/include/FlashRuntimeExtensions.h
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/myo.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/DeviceListener.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Pose.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/libmyo.h
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/libmyo/detail/visibility.h
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Pose_impl.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Hub.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Hub_impl.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Myo.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/impl/Myo_impl.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/detail/ThrowOnError.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Quaternion.hpp
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/Headers/cxx/Vector3.hpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Compile /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm206"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o MyoExtension/MyoExtension.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler414a887aa5edba41^79acf17ba5edba41^---0#0#1#-19%DVTDocumentLocation2@146"file:///Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm0000000000000000^4362"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o MyoExtension/MyoExtension.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/benkuper/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-generated-files.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-own-target-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-all-target-headers.hmap -iquote /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-project-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/i386 -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources -F/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/Dev/SDKs/MyoSDK -F/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac -MMD -MT dependencies -MF /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.d --serialize-diagnostics /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.dia -c /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.mm -o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o36"7ECB2947-6627-4946-8DE9-12B6415111D0-
+bB4896183-4C67-407E-8BDF-456E3411F9A6
 
 CCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s424187244.860247
@@ -50,6 +456,21 @@ o1 warning generated.
 lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp197"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerba4ddc6c9548b941^27866c6d9548b941^-396"/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp:240:23: warning: unused variable 'fre' [-Wunused-variable]            FREResult fre = FRECallObjectMethod(controller,(const uint8_t*)"updateMyoData",5,data,&res,NULL); //AS3 updateMyoData(id:String,pose:String,yaw:Number,pitch:Number,roll:Number)                      ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@21"Unused variable 'fre'-424187245#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@109"file:///Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp0000000000000000^239#22#239#22#6836#0#1#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@109"file:///Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp0000000000000000^3850"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o MyoExtension/MyoExtension.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension    export LANG=en_US.US-ASCII    /Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/benkuper/Library/Developer/Xcode/DerivedData/ModuleCache -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -fmodule-implementation-of MyoExtension -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode6-Beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-generated-files.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-own-target-headers.hmap -ivfsoverlay /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/all-product-headers.yaml -iquote /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-project-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/include -I/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/i386 -I/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources -F/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/SDKs/AIRFlexSDK/flex_sdk_4.6/runtimes/air/mac -F/Users/benkuper/Documents/SDKs/myo-mac-sdk-alpha6a -MMD -MT dependencies -MF /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.d --serialize-diagnostics /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.dia -c /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.cpp -o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o36"4130A65D-D1AC-47DB-9D40-2509ADE8AE28-
 b823D2B20-E3DE-4193-8BB8-258C78658651
 
+CCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s451780844.903646
+e451780844.928574
+r1
+xCompileC
+xBuild/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection217"Compile /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c269"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler1764e7eca0edba41^13b8edeca0edba41^---0#0#1#-19%DVTDocumentLocation2@216"file:///Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c0000000000000000^4139"CompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/benkuper/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-generated-files.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-own-target-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-all-target-headers.hmap -iquote /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-project-headers.hmap -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/i386 -I/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources -F/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/Dev/SDKs/MyoSDK -F/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac -MMD -MT dependencies -MF /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.d --serialize-diagnostics /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.dia -c /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c -o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o36"E401F1DD-AE8D-4710-907A-F1E44EF055DF-
+bDB6DE4B6-EE7A-43AE-AC7C-5FA7631FF3F3
+
 CCompileC Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources/MyoExtension_vers.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
 s424184980.495203
 e424184980.528147
@@ -66,14 +487,14 @@ lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection179"Compil
 bF97500EC-AF7F-4EBA-B26C-958A5FCD0EA2
 
 CCpHeader MyoExtension/MyoExtension.h Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h
-s424183701.167927
-e424183701.168785
+s451780796.404094
+e451780796.419513
 r1
 xCpHeader
 xMyoExtension/MyoExtension.h
 xBuild/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.h114"CpHeader MyoExtension/MyoExtension.h Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h57082b958748b941^7a362b958748b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.h0000000000000000^544"CpHeader MyoExtension/MyoExtension.h Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h    cd /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/MyoExtension.h /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Headers36"89F6EB34-7BC9-40B2-840F-0ED98E953EE6-
-bA8988786-03A6-4FEB-BA46-791D36276C18
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h114"CpHeader MyoExtension/MyoExtension.h Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h5f7e67bca0edba41^5a686bbca0edba41^---0#0#1#-19%DVTDocumentLocation2@195"file:///Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h0034e43cdcffdf42^658"CpHeader MyoExtension/MyoExtension.h Build/Products/Debug/MyoExtension.framework/Versions/A/Headers/MyoExtension.h    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/MyoExtension.h /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Headers36"FAD8437B-C7FD-423D-ACD3-12E7F0120A47-
+bD453EB2A-C6B6-4E45-99A1-0B72D0561FB5
 
 CCpResource /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/flashTest/MyoExtensionTest.as Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/MyoExtensionTest.as
 r0
@@ -86,6 +507,58 @@ r0
 
 CCpResource /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/flashTest/myoExtensionTest.swf Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/myoExtensionTest.swf
 r0
+
+CLd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386
+s451782011.945041
+e451782013.483770
+r1
+xLd
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension
+xnormal
+xi386
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.LinkFileList
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.o
+d/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_vers.o
+d/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe AIR.framework/Adobe AIR
+d/Users/benkuper/Documents/Dev/SDKs/MyoSDK/myo.framework/myo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection183"Link /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension82"Ld Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386dafef17ba5edba41^2bdb7b7da5edba41^---0#0#1#--1864"Ld Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/Dev/SDKs/MyoSDK -F/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac -filelist /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.LinkFileList -install_name @rpath/MyoExtension.framework/Versions/A/MyoExtension -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -mmacosx-version-min=10.9 -stdlib=libc++ -fobjc-link-runtime -framework Adobe\ AIR -framework myo -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_dependency_info.dat -o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension36"99E559E3-DBD4-4D0B-9A6F-66501D88B08E-
+bB4896183-4C67-407E-8BDF-456E3411F9A6
 
 CLd /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386
 s424187245.424790
@@ -141,6 +614,71 @@ d/Applications/Xcode6-Beta.app/Contents/Developer/Platforms/MacOSX.platform/Deve
 lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"Link /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension82"Ld Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386ccd06c6d9548b941^1408736d9548b941^---0#0#1#--1642"Ld Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension normal i386    cd /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -dynamiclib -isysroot /Applications/Xcode6-Beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -L/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug -F/Users/benkuper/Documents/SDKs/AIRFlexSDK/flex_sdk_4.6/runtimes/air/mac -F/Users/benkuper/Documents/SDKs/myo-mac-sdk-alpha6a -filelist /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.LinkFileList -install_name @rpath/MyoExtension.framework/Versions/A/MyoExtension -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -rpath -Xlinker @loader_path/../Frameworks -mmacosx-version-min=10.9 -stdlib=libc++ -framework myo -framework Adobe\ AIR -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_dependency_info.dat -o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/MyoExtension36"2004F445-2FC7-4960-916B-E6422033B537-
 b823D2B20-E3DE-4193-8BB8-258C78658651
 
+CPhaseScriptExecution Run\ Script /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.sh
+s451782214.630230
+e451782216.924988
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.sh
+o/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler
+o/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/bin/adt
+oLoading configuration: /Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/frameworks/air-config.xml
+o
+o7100 bytes written to /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/MyoExtension.swc in 1.469 seconds
+oInvalid extension descriptor: extension-descriptor.xml
+ousage:
+o  adt -checkstore SIGNING_OPTIONS
+o  adt -certificate -cn <name> ( -ou <org-unit> )? ( -o <org-name> )? ( -c <country> )? ( -validityPeriod <years> )? 2048-RSA <pfx-file> <password>
+o  adt -help
+o  adt -migrate SIGNING_OPTIONS ( <air-file-in> | <airn-file-in> ) <output-file>
+o  adt -package SIGNING_OPTIONS ( -target air )? <output-package> ( <app-desc> FILE_OPTIONS | <input-package> )
+o  adt -package SIGNING_OPTIONS -target airn <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )
+o  adt -package -target ( apk | apk-debug | apk-emulator | apk-captive-runtime ) ( CONNECT_OPTIONS? | LISTEN_OPTIONS? ) ( -airDownloadURL <url> )? ( ARCH_OPTIONS )? SIGNING_OPTIONS <output-package> ( <app-desc> PLATFORM-SDK-OPTION? FILE-AND-PATH-OPTIONS | <input-package> PLATFORM-SDK-OPTION? )
+o  adt -package -target ( ipa-test | ipa-debug | ipa-app-store | ipa-ad-hoc | ipa-test-interpreter | ipa-debug-interpreter | ipa-test-interpreter-simulator | ipa-debug-interpreter-simulator ) ( CONNECT_OPTIONS? | LISTEN_OPTIONS? ) ( -sampler )? ANE_LINK_OPTIONS? AOT_MODE_OPTIONS? SIGNING_OPTIONS <output-package> ( <app-desc> PLATFORM-SDK-OPTION? FILE-AND-PATH-OPTIONS | <input-package> PLATFORM-SDK-OPTION? )
+o  adt -package SIGNING_OPTIONS? -target native SIGNING_OPTIONS? <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )
+o  adt -package SIGNING_OPTIONS? -migrate SIGNING_OPTIONS -target native SIGNING_OPTIONS? <output-package> <app-desc> FILE_OPTIONS PATH-OPTION
+o  adt -package SIGNING_OPTIONS? -target bundle SIGNING_OPTIONS? <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )
+o  adt -package SIGNING_OPTIONS? -target ane <output-package> <ext-desc> ANE_OPTIONS
+o  adt -prepare <airi-file> <app-desc> FILE_AND_PATH_OPTIONS
+o  adt -sign SIGNING_OPTIONS ( -target ( air | airn | ane ) )? ( <airi-file> | <unsigned-ane-file> ) <output-file>
+o  adt -devices          PLATFORM-OPTION PLATFORM-SDK-OPTION? 
+o  adt -installRuntime   PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? ( -package <apk-file> )?
+o  adt -installApp       PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -package <apk-file | ipa-file>
+o  adt -uninstallRuntime PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION?
+o  adt -uninstallApp     PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -appid <app-id>
+o  adt -launchApp        { PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? ( -debuggerPort port )? -appid <app-id> }
+o  adt -runtimeVersion   PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION?
+o  adt -appVersion       PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -appid <app-id>
+o  adt -version
+o
+oSIGNING_OPTIONS      : -storetype <type> ( -keystore <store> )? ( -storepass <pass> )? ( -alias <aliasName> )? ( -keypass <pass> )? ( -providerName <name> )? ( -tsa <url> )? ( -provisioning-profile <profile> )?
+oFILE_OPTIONS         : <fileOrDir>* ( ( -C <dir> <fileOrDir>+ ) | ( -e <file> <path> ) )*
+oARCH_OPTIONS      	  : -arch (armv7 | x86)
+oCONNECT_OPTIONS      : -connect <host>
+oLISTEN_OPTIONS       : -listen <port>
+oANE_LINK_OPTIONS     : -hideAneLibSymbols ( yes | no )
+oANE_OPTIONS          : -swc <swc> ( -platform <name> (-platformoptions <file>)? <fileOrDir>* ( -C <dir> <fileOrDir>+ )* )*
+oFILE-AND-PATH-OPTIONS: ( PATH-OPTION | FILE-OPTIONS ) FILE-AND-PATH-OPTIONS?
+oPATH-OPTION          : -extdir <dir>
+oPLATFORM-OPTION      : -platform (android | ios)
+oPLATFORM-SDK-OPTION  : -platformsdk <platform-sdk-home-dir>
+oDEVICE-OPTION        : -device ( deviceID | ios-simulator )
+oAOT_MODE_OPTIONS     : -useLegacyAOT ( yes | no )
+oFAILED
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'131"PhaseScriptExecution Run\ Script Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.shc0cea146a6edba41^2dceec48a6edba41^-3963"/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/bin/adtLoading configuration: /Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/frameworks/air-config.xml7100 bytes written to /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/MyoExtension.swc in 1.469 secondsInvalid extension descriptor: extension-descriptor.xmlusage:  adt -checkstore SIGNING_OPTIONS  adt -certificate -cn <name> ( -ou <org-unit> )? ( -o <org-name> )? ( -c <country> )? ( -validityPeriod <years> )? 2048-RSA <pfx-file> <password>  adt -help  adt -migrate SIGNING_OPTIONS ( <air-file-in> | <airn-file-in> ) <output-file>  adt -package SIGNING_OPTIONS ( -target air )? <output-package> ( <app-desc> FILE_OPTIONS | <input-package> )  adt -package SIGNING_OPTIONS -target airn <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )  adt -package -target ( apk | apk-debug | apk-emulator | apk-captive-runtime ) ( CONNECT_OPTIONS? | LISTEN_OPTIONS? ) ( -airDownloadURL <url> )? ( ARCH_OPTIONS )? SIGNING_OPTIONS <output-package> ( <app-desc> PLATFORM-SDK-OPTION? FILE-AND-PATH-OPTIONS | <input-package> PLATFORM-SDK-OPTION? )  adt -package -target ( ipa-test | ipa-debug | ipa-app-store | ipa-ad-hoc | ipa-test-interpreter | ipa-debug-interpreter | ipa-test-interpreter-simulator | ipa-debug-interpreter-simulator ) ( CONNECT_OPTIONS? | LISTEN_OPTIONS? ) ( -sampler )? ANE_LINK_OPTIONS? AOT_MODE_OPTIONS? SIGNING_OPTIONS <output-package> ( <app-desc> PLATFORM-SDK-OPTION? FILE-AND-PATH-OPTIONS | <input-package> PLATFORM-SDK-OPTION? )  adt -package SIGNING_OPTIONS? -target native SIGNING_OPTIONS? <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )  adt -package SIGNING_OPTIONS? -migrate SIGNING_OPTIONS -target native SIGNING_OPTIONS? <output-package> <app-desc> FILE_OPTIONS PATH-OPTION  adt -package SIGNING_OPTIONS? -target bundle SIGNING_OPTIONS? <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )  adt -package SIGNING_OPTIONS? -target ane <output-package> <ext-desc> ANE_OPTIONS  adt -prepare <airi-file> <app-desc> FILE_AND_PATH_OPTIONS  adt -sign SIGNING_OPTIONS ( -target ( air | airn | ane ) )? ( <airi-file> | <unsigned-ane-file> ) <output-file>  adt -devices          PLATFORM-OPTION PLATFORM-SDK-OPTION?   adt -installRuntime   PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? ( -package <apk-file> )?  adt -installApp       PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -package <apk-file | ipa-file>  adt -uninstallRuntime PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION?  adt -uninstallApp     PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -appid <app-id>  adt -launchApp        { PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? ( -debuggerPort port )? -appid <app-id> }  adt -runtimeVersion   PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION?  adt -appVersion       PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -appid <app-id>  adt -versionSIGNING_OPTIONS      : -storetype <type> ( -keystore <store> )? ( -storepass <pass> )? ( -alias <aliasName> )? ( -keypass <pass> )? ( -providerName <name> )? ( -tsa <url> )? ( -provisioning-profile <profile> )?FILE_OPTIONS         : <fileOrDir>* ( ( -C <dir> <fileOrDir>+ ) | ( -e <file> <path> ) )*ARCH_OPTIONS      	  : -arch (armv7 | x86)CONNECT_OPTIONS      : -connect <host>LISTEN_OPTIONS       : -listen <port>ANE_LINK_OPTIONS     : -hideAneLibSymbols ( yes | no )ANE_OPTIONS          : -swc <swc> ( -platform <name> (-platformoptions <file>)? <fileOrDir>* ( -C <dir> <fileOrDir>+ )* )*FILE-AND-PATH-OPTIONS: ( PATH-OPTION | FILE-OPTIONS ) FILE-AND-PATH-OPTIONS?PATH-OPTION          : -extdir <dir>PLATFORM-OPTION      : -platform (android | ios)PLATFORM-SDK-OPTION  : -platformsdk <platform-sdk-home-dir>DEVICE-OPTION        : -device ( deviceID | ios-simulator )AOT_MODE_OPTIONS     : -useLegacyAOT ( yes | no )FAILED43(21%IDEActivityLogMessage2@51"/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler-451782214#0#51#-0#-----2@59"/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/bin/adt-451782214#51#59#-0#-----2@100"Loading configuration: /Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/frameworks/air-config.xml-451782215#110#100#-0#-----2@133"7100 bytes written to /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/MyoExtension.swc in 1.469 seconds-451782216#211#133#-0#-----2@55"Invalid extension descriptor: extension-descriptor.xml-451782216#344#55#-0#-----2@7"usage:-451782216#399#7#-0#-----2@34"  adt -checkstore SIGNING_OPTIONS-451782216#406#34#-0#-----2@147"  adt -certificate -cn <name> ( -ou <org-unit> )? ( -o <org-name> )? ( -c <country> )? ( -validityPeriod <years> )? 2048-RSA <pfx-file> <password>-451782216#440#147#-0#-----2@12"  adt -help-451782216#587#12#-0#-----2@80"  adt -migrate SIGNING_OPTIONS ( <air-file-in> | <airn-file-in> ) <output-file>-451782216#599#80#-0#-----2@111"  adt -package SIGNING_OPTIONS ( -target air )? <output-package> ( <app-desc> FILE_OPTIONS | <input-package> )-451782216#679#111#-0#-----2@116"  adt -package SIGNING_OPTIONS -target airn <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )-451782216#790#116#-0#-----2@294"  adt -package -target ( apk | apk-debug | apk-emulator | apk-captive-runtime ) ( CONNECT_OPTIONS? | LISTEN_OPTIONS? ) ( -airDownloadURL <url> )? ( ARCH_OPTIONS )? SIGNING_OPTIONS <output-package> ( <app-desc> PLATFORM-SDK-OPTION? FILE-AND-PATH-OPTIONS | <input-package> PLATFORM-SDK-OPTION? )-451782216#906#294#-0#-----2@410"  adt -package -target ( ipa-test | ipa-debug | ipa-app-store | ipa-ad-hoc | ipa-test-interpreter | ipa-debug-interpreter | ipa-test-interpreter-simulator | ipa-debug-interpreter-simulator ) ( CONNECT_OPTIONS? | LISTEN_OPTIONS? ) ( -sampler )? ANE_LINK_OPTIONS? AOT_MODE_OPTIONS? SIGNING_OPTIONS <output-package> ( <app-desc> PLATFORM-SDK-OPTION? FILE-AND-PATH-OPTIONS | <input-package> PLATFORM-SDK-OPTION? )-451782216#1200#410#-0#-----2@136"  adt -package SIGNING_OPTIONS? -target native SIGNING_OPTIONS? <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )-451782216#1610#136#-0#-----2@142"  adt -package SIGNING_OPTIONS? -migrate SIGNING_OPTIONS -target native SIGNING_OPTIONS? <output-package> <app-desc> FILE_OPTIONS PATH-OPTION-451782216#1746#142#-0#-----2@136"  adt -package SIGNING_OPTIONS? -target bundle SIGNING_OPTIONS? <output-package> ( <app-desc> FILE-AND-PATH-OPTIONS | <input-package> )-451782216#1888#136#-0#-----2@84"  adt -package SIGNING_OPTIONS? -target ane <output-package> <ext-desc> ANE_OPTIONS-451782216#2024#84#-0#-----2@60"  adt -prepare <airi-file> <app-desc> FILE_AND_PATH_OPTIONS-451782216#2108#60#-0#-----2@114"  adt -sign SIGNING_OPTIONS ( -target ( air | airn | ane ) )? ( <airi-file> | <unsigned-ane-file> ) <output-file>-451782216#2168#114#-0#-----2@62"  adt -devices          PLATFORM-OPTION PLATFORM-SDK-OPTION? -451782216#2282#62#-0#-----2@101"  adt -installRuntime   PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? ( -package <apk-file> )?-451782216#2344#101#-0#-----2@107"  adt -installApp       PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -package <apk-file | ipa-file>-451782216#2445#107#-0#-----2@76"  adt -uninstallRuntime PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION?-451782216#2552#76#-0#-----2@92"  adt -uninstallApp     PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -appid <app-id>-451782216#2628#92#-0#-----2@120"  adt -launchApp        { PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? ( -debuggerPort port )? -appid <app-id> }-451782216#2720#120#-0#-----2@76"  adt -runtimeVersion   PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION?-451782216#2840#76#-0#-----2@92"  adt -appVersion       PLATFORM-OPTION PLATFORM-SDK-OPTION? DEVICE-OPTION? -appid <app-id>-451782216#2916#92#-0#-----2@15"  adt -version-451782216#3008#15#-0#-----2@211"SIGNING_OPTIONS      : -storetype <type> ( -keystore <store> )? ( -storepass <pass> )? ( -alias <aliasName> )? ( -keypass <pass> )? ( -providerName <name> )? ( -tsa <url> )? ( -provisioning-profile <profile> )?-451782216#3024#211#-0#-----2@90"FILE_OPTIONS         : <fileOrDir>* ( ( -C <dir> <fileOrDir>+ ) | ( -e <file> <path> ) )*-451782216#3235#90#-0#-----2@43"ARCH_OPTIONS      	  : -arch (armv7 | x86)-451782216#3325#43#-0#-----2@39"CONNECT_OPTIONS      : -connect <host>-451782216#3368#39#-0#-----2@38"LISTEN_OPTIONS       : -listen <port>-451782216#3407#38#-0#-----2@55"ANE_LINK_OPTIONS     : -hideAneLibSymbols ( yes | no )-451782216#3445#55#-0#-----2@123"ANE_OPTIONS          : -swc <swc> ( -platform <name> (-platformoptions <file>)? <fileOrDir>* ( -C <dir> <fileOrDir>+ )* )*-451782216#3500#123#-0#-----2@77"FILE-AND-PATH-OPTIONS: ( PATH-OPTION | FILE-OPTIONS ) FILE-AND-PATH-OPTIONS?-451782216#3623#77#-0#-----2@37"PATH-OPTION          : -extdir <dir>-451782216#3700#37#-0#-----2@49"PLATFORM-OPTION      : -platform (android | ios)-451782216#3737#49#-0#-----2@60"PLATFORM-SDK-OPTION  : -platformsdk <platform-sdk-home-dir>-451782216#3786#60#-0#-----2@60"DEVICE-OPTION        : -device ( deviceID | ios-simulator )-451782216#3846#60#-0#-----2@50"AOT_MODE_OPTIONS     : -useLegacyAOT ( yes | no )-451782216#3906#50#-0#-----2@7"FAILED-451782216#3956#7#-0#-----0#0#1#--25583"PhaseScriptExecution Run\ Script Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.sh    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export ACTION=build    export ALTERNATE_GROUP=staff    export ALTERNATE_MODE=u+w,go-w,a+rX    export ALTERNATE_OWNER=benkuper    export ALWAYS_SEARCH_USER_PATHS=NO    export ALWAYS_USE_SEPARATE_HEADERMAPS=YES    export APPLE_INTERNAL_DEVELOPER_DIR=/AppleInternal/Developer    export APPLE_INTERNAL_DIR=/AppleInternal    export APPLE_INTERNAL_DOCUMENTATION_DIR=/AppleInternal/Documentation    export APPLE_INTERNAL_LIBRARY_DIR=/AppleInternal/Library    export APPLE_INTERNAL_TOOLS=/AppleInternal/Developer/Tools    export APPLY_RULES_IN_COPY_FILES=NO    export ARCHS=i386    export ARCHS_STANDARD=x86_64    export ARCHS_STANDARD_32_64_BIT="x86_64 i386"    export ARCHS_STANDARD_32_BIT=i386    export ARCHS_STANDARD_64_BIT=x86_64    export ARCHS_STANDARD_INCLUDING_64_BIT=x86_64    export AVAILABLE_PLATFORMS="iphonesimulator macosx iphoneos"    export BUILD_COMPONENTS="headers build"    export BUILD_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products    export BUILD_ROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products    export BUILD_STYLE=    export BUILD_VARIANTS=normal    export BUILT_PRODUCTS_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug    export CACHE_ROOT=/var/folders/7h/xlc8zhsj66ggdn0cx2zzp6tr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode    export CCHROOT=/var/folders/7h/xlc8zhsj66ggdn0cx2zzp6tr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode    export CHMOD=/bin/chmod    export CHOWN=/usr/sbin/chown    export CLANG_CXX_LANGUAGE_STANDARD=gnu++0x    export CLANG_CXX_LIBRARY=libc++    export CLANG_ENABLE_MODULES=YES    export CLANG_ENABLE_OBJC_ARC=NO    export CLANG_WARN_BOOL_CONVERSION=YES    export CLANG_WARN_CONSTANT_CONVERSION=YES    export CLANG_WARN_DIRECT_OBJC_ISA_USAGE=YES_ERROR    export CLANG_WARN_EMPTY_BODY=YES    export CLANG_WARN_ENUM_CONVERSION=YES    export CLANG_WARN_INT_CONVERSION=YES    export CLANG_WARN_OBJC_ROOT_CLASS=YES_ERROR    export CLANG_WARN_UNREACHABLE_CODE=YES    export CLANG_WARN__DUPLICATE_METHOD_MATCH=YES    export CLASS_FILE_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/JavaClasses    export CLEAN_PRECOMPS=YES    export CLONE_HEADERS=NO    export CODESIGNING_FOLDER_PATH=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A    export CODE_SIGNING_ALLOWED=YES    export COLOR_DIAGNOSTICS=NO    export COMBINE_HIDPI_IMAGES=YES    export COMMAND_MODE=legacy    export COMPOSITE_SDK_DIRS=/var/folders/7h/xlc8zhsj66ggdn0cx2zzp6tr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/CompositeSDKs    export CONFIGURATION=Debug    export CONFIGURATION_BUILD_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug    export CONFIGURATION_TEMP_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug    export CONTENTS_FOLDER_PATH=MyoExtension.framework/Versions/A    export COPYING_PRESERVES_HFS_DATA=NO    export COPY_PHASE_STRIP=NO    export COPY_RESOURCES_FROM_STATIC_FRAMEWORKS=YES    export CP=/bin/cp    export CREATE_INFOPLIST_SECTION_IN_BINARY=NO    export CURRENT_ARCH=i386    export CURRENT_PROJECT_VERSION=1    export CURRENT_VARIANT=normal    export CURRENT_VERSION=Current    export DEAD_CODE_STRIPPING=NO    export DEBUGGING_SYMBOLS=YES    export DEBUG_INFORMATION_FORMAT=dwarf    export DEFAULT_COMPILER=com.apple.compilers.llvm.clang.1_0    export DEFAULT_KEXT_INSTALL_PATH=/Library/Extensions    export DEFINES_MODULE=YES    export DEPLOYMENT_LOCATION=NO    export DEPLOYMENT_POSTPROCESSING=NO    export DERIVED_FILES_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources    export DERIVED_FILE_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources    export DERIVED_SOURCES_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/DerivedSources    export DEVELOPER_APPLICATIONS_DIR=/Applications/Xcode.app/Contents/Developer/Applications    export DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer    export DEVELOPER_FRAMEWORKS_DIR=/Applications/Xcode.app/Contents/Developer/Library/Frameworks    export DEVELOPER_FRAMEWORKS_DIR_QUOTED=/Applications/Xcode.app/Contents/Developer/Library/Frameworks    export DEVELOPER_LIBRARY_DIR=/Applications/Xcode.app/Contents/Developer/Library    export DEVELOPER_SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    export DEVELOPER_TOOLS_DIR=/Applications/Xcode.app/Contents/Developer/Tools    export DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr    export DEVELOPMENT_LANGUAGE=English    export DOCUMENTATION_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources/English.lproj/Documentation    export DO_HEADER_SCANNING_IN_JAM=NO    export DSTROOT=/tmp/MyoExtension.dst    export DT_TOOLCHAIN_DIR=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    export DWARF_DSYM_FILE_NAME=MyoExtension.framework.dSYM    export DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT=NO    export DWARF_DSYM_FOLDER_PATH=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug    export DYLIB_COMPATIBILITY_VERSION=1    export DYLIB_CURRENT_VERSION=1    export DYLIB_INSTALL_NAME_BASE="@rpath"    export EMBEDDED_PROFILE_NAME=embedded.provisionprofile    export ENABLE_HEADER_DEPENDENCIES=YES    export ENABLE_STRICT_OBJC_MSGSEND=YES    export EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS=".DS_Store .svn .git .hg CVS"    export EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES="*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    export EXECUTABLES_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources/English.lproj    export EXECUTABLE_FOLDER_PATH=MyoExtension.framework/Versions/A    export EXECUTABLE_NAME=MyoExtension    export EXECUTABLE_PATH=MyoExtension.framework/Versions/A/MyoExtension    export FILE_LIST=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects/LinkFileList    export FIXED_FILES_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/FixedFiles    export FRAMEWORKS_FOLDER_PATH=MyoExtension.framework/Versions/A/Frameworks    export FRAMEWORK_FLAG_PREFIX=-framework    export FRAMEWORK_SEARCH_PATHS="/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug  /Users/benkuper/Documents/Dev/SDKs/MyoSDK /Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac"    export FRAMEWORK_VERSION=A    export FULL_PRODUCT_NAME=MyoExtension.framework    export GCC3_VERSION=3.3    export GCC_C_LANGUAGE_STANDARD=gnu99    export GCC_DYNAMIC_NO_PIC=NO    export GCC_INLINES_ARE_PRIVATE_EXTERN=YES    export GCC_OPTIMIZATION_LEVEL=0    export GCC_PFE_FILE_C_DIALECTS="c objective-c c++ objective-c++"    export GCC_PREPROCESSOR_DEFINITIONS="DEBUG=1 "    export GCC_SYMBOLS_PRIVATE_EXTERN=NO    export GCC_TREAT_WARNINGS_AS_ERRORS=NO    export GCC_VERSION=com.apple.compilers.llvm.clang.1_0    export GCC_VERSION_IDENTIFIER=com_apple_compilers_llvm_clang_1_0    export GCC_WARN_64_TO_32_BIT_CONVERSION=YES    export GCC_WARN_ABOUT_RETURN_TYPE=YES_ERROR    export GCC_WARN_UNDECLARED_SELECTOR=YES    export GCC_WARN_UNINITIALIZED_AUTOS=YES_AGGRESSIVE    export GCC_WARN_UNUSED_FUNCTION=YES    export GCC_WARN_UNUSED_VARIABLE=YES    export GENERATE_MASTER_OBJECT_FILE=NO    export GENERATE_PKGINFO_FILE=NO    export GENERATE_PROFILING_CODE=NO    export GID=20    export GROUP=staff    export HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT=YES    export HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES=YES    export HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS=YES    export HEADERMAP_INCLUDES_PROJECT_HEADERS=YES    export HEADER_SEARCH_PATHS="/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/include  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"    export ICONV=/usr/bin/iconv    export INFOPLISTSTRINGS_PATH=MyoExtension.framework/Versions/A/Resources/English.lproj/InfoPlist.strings    export INFOPLIST_EXPAND_BUILD_SETTINGS=YES    export INFOPLIST_FILE=MyoExtension/Info.plist    export INFOPLIST_OUTPUT_FORMAT=same-as-input    export INFOPLIST_PATH=MyoExtension.framework/Versions/A/Resources/Info.plist    export INFOPLIST_PREPROCESS=NO    export INSTALL_DIR=/tmp/MyoExtension.dst/Library/Frameworks    export INSTALL_GROUP=staff    export INSTALL_MODE_FLAG=u+w,go-w,a+rX    export INSTALL_OWNER=benkuper    export INSTALL_PATH=/Library/Frameworks    export INSTALL_ROOT=/tmp/MyoExtension.dst    export JAVAC_DEFAULT_FLAGS="-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    export JAVA_APP_STUB=/System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    export JAVA_ARCHIVE_CLASSES=YES    export JAVA_ARCHIVE_TYPE=JAR    export JAVA_COMPILER=/usr/bin/javac    export JAVA_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources/Java    export JAVA_FRAMEWORK_RESOURCES_DIRS=Resources    export JAVA_JAR_FLAGS=cv    export JAVA_SOURCE_SUBDIR=.    export JAVA_USE_DEPENDENCIES=YES    export JAVA_ZIP_FLAGS=-urg    export JIKES_DEFAULT_FLAGS="+E +OLDCSO"    export KEEP_PRIVATE_EXTERNS=NO    export LD_DEPENDENCY_INFO_FILE=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension_dependency_info.dat    export LD_DYLIB_INSTALL_NAME="@rpath/MyoExtension.framework/Versions/A/MyoExtension"    export LD_GENERATE_MAP_FILE=NO    export LD_MAP_FILE_PATH=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/MyoExtension-LinkMap-normal-i386.txt    export LD_NO_PIE=NO    export LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER=YES    export LD_RUNPATH_SEARCH_PATHS=" @executable_path/../Frameworks @loader_path/../Frameworks"    export LEGACY_DEVELOPER_DIR=/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    export LEX=lex    export LIBRARY_FLAG_NOSPACE=YES    export LIBRARY_FLAG_PREFIX=-l    export LIBRARY_KEXT_INSTALL_PATH=/Library/Extensions    export LIBRARY_SEARCH_PATHS="/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug "    export LINKER_DISPLAYS_MANGLED_NAMES=NO    export LINK_FILE_LIST_normal_i386=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal/i386/MyoExtension.LinkFileList    export LINK_WITH_STANDARD_LIBRARIES=YES    export LOCALIZED_RESOURCES_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources/English.lproj    export LOCAL_ADMIN_APPS_DIR=/Applications/Utilities    export LOCAL_APPS_DIR=/Applications    export LOCAL_DEVELOPER_DIR=/Library/Developer    export LOCAL_LIBRARY_DIR=/Library    export MACH_O_TYPE=mh_dylib    export MACOSX_DEPLOYMENT_TARGET=10.9    export MAC_OS_X_PRODUCT_BUILD_VERSION=13A598    export MAC_OS_X_VERSION_ACTUAL=1090    export MAC_OS_X_VERSION_MAJOR=1090    export MAC_OS_X_VERSION_MINOR=0900    export METAL_ENABLE_DEBUG_INFO=YES    export MODULE_CACHE_DIR=/Users/benkuper/Library/Developer/Xcode/DerivedData/ModuleCache    export NATIVE_ARCH=i386    export NATIVE_ARCH_32_BIT=i386    export NATIVE_ARCH_64_BIT=x86_64    export NATIVE_ARCH_ACTUAL=x86_64    export NO_COMMON=YES    export OBJECT_FILE_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects    export OBJECT_FILE_DIR_normal=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Objects-normal    export OBJROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates    export ONLY_ACTIVE_ARCH=YES    export OPTIMIZATION_LEVEL=0    export OS=MACOS    export OSAC=/usr/bin/osacompile    export PACKAGE_TYPE=com.apple.package-type.wrapper.framework    export PASCAL_STRINGS=YES    export PATH="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    export PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES="/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    export PBDEVELOPMENTPLIST_PATH=MyoExtension.framework/Versions/A/pbdevelopment.plist    export PFE_FILE_C_DIALECTS=objective-c++    export PKGINFO_FILE_PATH=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/PkgInfo    export PKGINFO_PATH=MyoExtension.framework/PkgInfo    export PLATFORM_DEVELOPER_APPLICATIONS_DIR=/Applications/Xcode.app/Contents/Developer/Applications    export PLATFORM_DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin    export PLATFORM_DEVELOPER_LIBRARY_DIR=/Applications/Xcode.app/Contents/Developer/Library    export PLATFORM_DEVELOPER_SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    export PLATFORM_DEVELOPER_TOOLS_DIR=/Applications/Xcode.app/Contents/Developer/Tools    export PLATFORM_DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr    export PLATFORM_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform    export PLATFORM_NAME=macosx    export PLATFORM_PREFERRED_ARCH=x86_64    export PLATFORM_PRODUCT_BUILD_VERSION=5B1008    export PLIST_FILE_OUTPUT_FORMAT=same-as-input    export PLUGINS_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources    export PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR=YES    export PRECOMP_DESTINATION_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/PrefixHeaders    export PRESERVE_DEAD_CODE_INITS_AND_TERMS=NO    export PRIVATE_HEADERS_FOLDER_PATH=MyoExtension.framework/Versions/A/PrivateHeaders    export PRODUCT_NAME=MyoExtension    export PRODUCT_SETTINGS_PATH=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist    export PRODUCT_TYPE=com.apple.product-type.framework    export PROFILING_CODE=NO    export PROJECT=MyoExtension    export PROJECT_DERIVED_FILE_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/DerivedSources    export PROJECT_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export PROJECT_FILE_PATH=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension.xcodeproj    export PROJECT_NAME=MyoExtension    export PROJECT_TEMP_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build    export PROJECT_TEMP_ROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates    export PUBLIC_HEADERS_FOLDER_PATH=MyoExtension.framework/Versions/A/Headers    export RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS=YES    export REMOVE_CVS_FROM_RESOURCES=YES    export REMOVE_GIT_FROM_RESOURCES=YES    export REMOVE_HG_FROM_RESOURCES=YES    export REMOVE_SVN_FROM_RESOURCES=YES    export REZ_COLLECTOR_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/ResourceManagerResources    export REZ_OBJECTS_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/ResourceManagerResources/Objects    export REZ_SEARCH_PATHS="/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug "    export SCAN_ALL_SOURCE_FILES_FOR_INCLUDES=NO    export SCRIPTS_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources/Scripts    export SCRIPT_INPUT_FILE_COUNT=0    export SCRIPT_OUTPUT_FILE_COUNT=0    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    export SDK_DIR=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    export SDK_NAME=macosx10.9    export SDK_PRODUCT_BUILD_VERSION=13C64    export SED=/usr/bin/sed    export SEPARATE_STRIP=NO    export SEPARATE_SYMBOL_EDIT=NO    export SET_DIR_MODE_OWNER_GROUP=YES    export SET_FILE_MODE_OWNER_GROUP=NO    export SHALLOW_BUNDLE=NO    export SHARED_DERIVED_FILE_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/DerivedSources    export SHARED_FRAMEWORKS_FOLDER_PATH=MyoExtension.framework/Versions/A/SharedFrameworks    export SHARED_PRECOMPS_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/PrecompiledHeaders    export SHARED_SUPPORT_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources    export SKIP_INSTALL=YES    export SOURCE_ROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export SRCROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    export STRINGS_FILE_OUTPUT_ENCODING=UTF-16    export STRIP_INSTALLED_PRODUCT=YES    export STRIP_STYLE=debugging    export SUPPORTED_PLATFORMS=macosx    export SYMROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products    export SYSTEM_ADMIN_APPS_DIR=/Applications/Utilities    export SYSTEM_APPS_DIR=/Applications    export SYSTEM_CORE_SERVICES_DIR=/System/Library/CoreServices    export SYSTEM_DEMOS_DIR=/Applications/Extras    export SYSTEM_DEVELOPER_APPS_DIR=/Applications/Xcode.app/Contents/Developer/Applications    export SYSTEM_DEVELOPER_BIN_DIR=/Applications/Xcode.app/Contents/Developer/usr/bin    export SYSTEM_DEVELOPER_DEMOS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    export SYSTEM_DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer    export SYSTEM_DEVELOPER_DOC_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    export SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    export SYSTEM_DEVELOPER_JAVA_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    export SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR="/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    export SYSTEM_DEVELOPER_RELEASENOTES_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    export SYSTEM_DEVELOPER_TOOLS=/Applications/Xcode.app/Contents/Developer/Tools    export SYSTEM_DEVELOPER_TOOLS_DOC_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    export SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR="/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    export SYSTEM_DEVELOPER_USR_DIR=/Applications/Xcode.app/Contents/Developer/usr    export SYSTEM_DEVELOPER_UTILITIES_DIR=/Applications/Xcode.app/Contents/Developer/Applications/Utilities    export SYSTEM_DOCUMENTATION_DIR=/Library/Documentation    export SYSTEM_KEXT_INSTALL_PATH=/System/Library/Extensions    export SYSTEM_LIBRARY_DIR=/System/Library    export TARGETNAME=MyoExtension    export TARGET_BUILD_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug    export TARGET_NAME=MyoExtension    export TARGET_TEMP_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build    export TEMP_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build    export TEMP_FILES_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build    export TEMP_FILE_DIR=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build    export TEMP_ROOT=/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates    export TOOLCHAINS=com.apple.dt.toolchain.XcodeDefault    export UID=501    export UNLOCALIZED_RESOURCES_FOLDER_PATH=MyoExtension.framework/Versions/A/Resources    export UNSTRIPPED_PRODUCT=NO    export USER=benkuper    export USER_APPS_DIR=/Users/benkuper/Applications    export USER_LIBRARY_DIR=/Users/benkuper/Library    export USE_DYNAMIC_NO_PIC=YES    export USE_HEADERMAP=YES    export USE_HEADER_SYMLINKS=NO    export VALIDATE_PRODUCT=NO    export VALID_ARCHS=i386    export VERBOSE_PBXCP=NO    export VERSIONING_SYSTEM=apple-generic    export VERSIONPLIST_PATH=MyoExtension.framework/Versions/A/Resources/version.plist    export VERSIONS_FOLDER_PATH=MyoExtension.framework/Versions    export VERSION_INFO_BUILDER=benkuper    export VERSION_INFO_FILE=MyoExtension_vers.c    export VERSION_INFO_STRING="\"@(#)PROGRAM:MyoExtension  PROJECT:MyoExtension-1\""    export WRAPPER_EXTENSION=framework    export WRAPPER_NAME=MyoExtension.framework    export WRAPPER_SUFFIX=.framework    export XCODE_APP_SUPPORT_DIR=/Applications/Xcode.app/Contents/Developer/Library/Xcode    export XCODE_PRODUCT_BUILD_VERSION=5B1008    export XCODE_VERSION_ACTUAL=0511    export XCODE_VERSION_MAJOR=0500    export XCODE_VERSION_MINOR=0510    export XPCSERVICES_FOLDER_PATH=MyoExtension.framework/Versions/A/XPCServices    export YACC=yacc    export arch=i386    export variant=normal    /bin/sh -c /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Intermediates/MyoExtension.build/Debug/MyoExtension.build/Script-66F97B771AEDA10F003C3777.sh36"37290247-D748-41B2-80D2-01AD4610F3C4-
+b8DC5171D-C066-48D1-8CC2-3442D5D5B93A
+
+CProcessInfoPlistFile /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist
+s451780795.217872
+e451780795.222252
+r1
+xProcessInfoPlistFile
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection142"Process /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist120"ProcessInfoPlistFile Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist MyoExtension/Info.plist0a3038bba0edba41^cde738bba0edba41^---0#0#1#-19%DVTDocumentLocation2@141"file:///Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist0000000000000000^631"ProcessInfoPlistFile Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist MyoExtension/Info.plist    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    builtin-infoPlistUtility /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/MyoExtension/Info.plist -expandbuildsettings -platform macosx -o /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist36"B29C65BE-FEF5-4C8B-ABB4-7B22DBAA38A1-
+bD453EB2A-C6B6-4E45-99A1-0B72D0561FB5
+
 CProcessInfoPlistFile /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/Info.plist
 s424183701.106551
 e424183701.108236
@@ -150,6 +688,15 @@ x/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/
 x/Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/Info.plist
 lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Process /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/Info.plist120"ProcessInfoPlistFile Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist MyoExtension/Info.plist1e531b958748b941^b3cf1b958748b941^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/Info.plist0000000000000000^517"ProcessInfoPlistFile Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist MyoExtension/Info.plist    cd /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension    builtin-infoPlistUtility /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/MyoExtension/Info.plist -expandbuildsettings -platform macosx -o /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework/Versions/A/Resources/Info.plist36"A7C2D6E1-094E-4808-A6B2-A34867FB2A81-
 bA8988786-03A6-4FEB-BA46-791D36276C18
+
+CTouch /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework
+s451782017.746587
+e451782017.776351
+r1
+xTouch
+x/Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Touch /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework49"Touch Build/Products/Debug/MyoExtension.frameworkc329bf81a5edba41^94c0c681a5edba41^---0#0#1#--345"Touch Build/Products/Debug/MyoExtension.framework    cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension    /usr/bin/touch -c /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src/native_src/MacOS-x86/MyoExtension/Build/Products/Debug/MyoExtension.framework36"A3355F88-5571-4D9F-AE4E-2576B70E179C-
+bB4896183-4C67-407E-8BDF-456E3411F9A6
 
 CTouch /Users/benkuper/Documents/Dev/NativeExtensions/MyoExtension/MyoExtension/Build/Products/Debug/MyoExtension.framework
 s424187245.451231

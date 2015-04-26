@@ -10,10 +10,10 @@
 		6679C32D194884D0006BE01F /* MyoExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6679C32C194884D0006BE01F /* MyoExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6679C333194884D0006BE01F /* MyoExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6679C327194884D0006BE01F /* MyoExtension.framework */; };
 		6679C33A194884D0006BE01F /* MyoExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6679C339194884D0006BE01F /* MyoExtensionTests.m */; };
-		6679C3441948853C006BE01F /* MyoExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6679C3431948853C006BE01F /* MyoExtension.cpp */; };
-		6679C3461948859C006BE01F /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6679C3451948859C006BE01F /* FlashRuntimeExtensions.h */; };
-		6679C34819488724006BE01F /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6679C34719488724006BE01F /* Adobe AIR.framework */; };
-		6679C35519489273006BE01F /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6679C35419489273006BE01F /* myo.framework */; };
+		6679C3441948853C006BE01F /* MyoExtension.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6679C3431948853C006BE01F /* MyoExtension.mm */; };
+		66F97B721AEDA066003C3777 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F97B711AEDA066003C3777 /* myo.framework */; };
+		66F97B741AEDA077003C3777 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F97B731AEDA077003C3777 /* FlashRuntimeExtensions.h */; };
+		66F97B761AEDA08E003C3777 /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F97B751AEDA08E003C3777 /* Adobe AIR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +33,10 @@
 		6679C332194884D0006BE01F /* MyoExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyoExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6679C338194884D0006BE01F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6679C339194884D0006BE01F /* MyoExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyoExtensionTests.m; sourceTree = "<group>"; };
-		6679C3431948853C006BE01F /* MyoExtension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyoExtension.cpp; sourceTree = "<group>"; };
-		6679C3451948859C006BE01F /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = ../../../../../SDKs/AIRFlexSDK/flex_sdk_4.6/include/FlashRuntimeExtensions.h; sourceTree = "<group>"; };
-		6679C34719488724006BE01F /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../SDKs/AIRFlexSDK/flex_sdk_4.6/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<group>"; };
-		6679C35419489273006BE01F /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = "../../../../SDKs/myo-mac-sdk-alpha6a/myo.framework"; sourceTree = "<group>"; };
+		6679C3431948853C006BE01F /* MyoExtension.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyoExtension.mm; sourceTree = "<group>"; };
+		66F97B711AEDA066003C3777 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = ../../../../../../../../SDKs/MyoSDK/myo.framework; sourceTree = "<group>"; };
+		66F97B731AEDA077003C3777 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = ../../../../../../../../SDKs/AIRSDK_Compiler/include/FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		66F97B751AEDA08E003C3777 /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../../../../../SDKs/AIRSDK_Compiler/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6679C35519489273006BE01F /* myo.framework in Frameworks */,
-				6679C34819488724006BE01F /* Adobe AIR.framework in Frameworks */,
+				66F97B761AEDA08E003C3777 /* Adobe AIR.framework in Frameworks */,
+				66F97B721AEDA066003C3777 /* myo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +63,6 @@
 		6679C31D194884D0006BE01F = {
 			isa = PBXGroup;
 			children = (
-				6679C35419489273006BE01F /* myo.framework */,
-				6679C34719488724006BE01F /* Adobe AIR.framework */,
 				6679C329194884D0006BE01F /* MyoExtension */,
 				6679C336194884D0006BE01F /* MyoExtensionTests */,
 				6679C328194884D0006BE01F /* Products */,
@@ -83,8 +81,10 @@
 		6679C329194884D0006BE01F /* MyoExtension */ = {
 			isa = PBXGroup;
 			children = (
-				6679C3451948859C006BE01F /* FlashRuntimeExtensions.h */,
-				6679C3431948853C006BE01F /* MyoExtension.cpp */,
+				66F97B751AEDA08E003C3777 /* Adobe AIR.framework */,
+				66F97B731AEDA077003C3777 /* FlashRuntimeExtensions.h */,
+				66F97B711AEDA066003C3777 /* myo.framework */,
+				6679C3431948853C006BE01F /* MyoExtension.mm */,
 				6679C32C194884D0006BE01F /* MyoExtension.h */,
 				6679C32A194884D0006BE01F /* Supporting Files */,
 			);
@@ -123,7 +123,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6679C3461948859C006BE01F /* FlashRuntimeExtensions.h in Headers */,
+				66F97B741AEDA077003C3777 /* FlashRuntimeExtensions.h in Headers */,
 				6679C32D194884D0006BE01F /* MyoExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +139,7 @@
 				6679C323194884D0006BE01F /* Frameworks */,
 				6679C324194884D0006BE01F /* Headers */,
 				6679C325194884D0006BE01F /* Resources */,
+				66F97B771AEDA10F003C3777 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,12 +221,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66F97B771AEDA10F003C3777 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ../../..\nsh build.command";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6679C322194884D0006BE01F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6679C3441948853C006BE01F /* MyoExtension.cpp in Sources */,
+				6679C3441948853C006BE01F /* MyoExtension.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -339,8 +357,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/benkuper/Documents/SDKs/AIRFlexSDK/flex_sdk_4.6/runtimes/air/mac,
-					"/Users/benkuper/Documents/SDKs/myo-mac-sdk-alpha6a",
+					/Users/benkuper/Documents/Dev/SDKs/MyoSDK,
+					/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac,
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MyoExtension/Info.plist;
@@ -356,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -363,8 +382,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/benkuper/Documents/SDKs/AIRFlexSDK/flex_sdk_4.6/runtimes/air/mac,
-					"/Users/benkuper/Documents/SDKs/myo-mac-sdk-alpha6a",
+					/Users/benkuper/Documents/Dev/SDKs/MyoSDK,
+					/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler/runtimes/air/mac,
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MyoExtension/Info.plist;

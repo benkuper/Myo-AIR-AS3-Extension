@@ -7,7 +7,7 @@ TARGET=MyoExtension
 
 #rm -f $TARGET
 
-FLEX_SDK=/Users/benkuper/Documents/SDKs/AIRFlexSDK/flex_sdk_4.6
+FLEX_SDK=/Users/benkuper/Documents/Dev/SDKs/AIRSDK_Compiler
 ADT=$FLEX_SDK/bin/adt
 ACOMPC=$FLEX_SDK/bin/acompc
 
@@ -19,7 +19,7 @@ rm -f $TARGET.ane
 rm -rf build
 mkdir -p build
 
-cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo-AIR-AS3-Extension-master/ane_src
+cd /Users/benkuper/Documents/Dev/NativeExtensions/Myo/Myo-AS3-Extension/ane_src
 "$ACOMPC" -source-path as3_src -include-classes benkuper.nativeExtensions.MyoController -swf-version=14 -output $TARGET.swc
 
 
@@ -33,11 +33,10 @@ mv library.swf build
 	-target ane MyoController.ane extension-descriptor.xml \
 	-swc $TARGET.swc  \
     -platform Windows-x86 \
-    -C native_src/Windows-x86/MyoExtension/Debug . \
+    -C native_src/Windows-x86/ MyoExtension.dll \
     -C build library.swf \
     -platform MacOS-x86 \
     -C build . \
-    -C /Users/benkuper/Documents/SDKs/myo-mac-sdk-alpha6a/myo.framework \
 
 if [ -f ./$TARGET.ane ];
 then
