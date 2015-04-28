@@ -76,6 +76,10 @@ package benkuper.nativeExtensions
 				case "data":
 					extContext.call("update",this);
 					break;
+					
+				case "error":
+					trace("4:Error connecting to Myo Connect, is Myo Connect running ?");
+					break;
 			}
 			
 		}
@@ -90,6 +94,15 @@ package benkuper.nativeExtensions
 			myo.updateData(connected, pose, yaw, pitch, roll,accelX,accelY,accelZ,gyroX,gyroY,gyroZ);
 		}
 		
+		public function updateMyoEmgData(id:String, data1:int, data2:int, data3:int, data4:int, data5:int, data6:int, data7:int, data8:int):void
+		{
+			//trace("[MyoController] Update myo emg data !", id, data1);
+			var myo:Myo = getMyoByID(id);
+			if (myo == null) myo = addMyo(id);
+			
+			myo.updateEmgData([data1, data2, data3, data4, data5, data6, data7, data8]);
+		}
+		
 		private function addMyo(myoID:String):Myo
 		{
 			var m:Myo = getMyoByID(myoID);
@@ -98,7 +111,6 @@ package benkuper.nativeExtensions
 			m = new Myo(myoID);
 			myos.push(m);
 			
-			m.isTrained = isMyoTrained(m);
 			//trace("[MyoController] Add Myo : ", m.id, m.isTrained);
 			dispatchEvent(new MyoEvent(MyoEvent.MYO_PAIRED, m));
 			
@@ -110,15 +122,32 @@ package benkuper.nativeExtensions
 			myos.splice(myos.indexOf(myo), 1);
 		}
 		
+		
+		public function setLockingPolicy(autoLock:Boolean):void 
+		{
+			//trace("[MyoController] vibrate");
+			extContext.call("setLockingPolicy", autoLock);
+		}
+		
+		
 		public function vibrate(id:String, vibrationType:int):void 
 		{
-			trace("[MyoController] vibrate");
+			//trace("[MyoController] vibrate");
 			extContext.call("vibrate", id, vibrationType);
 		}
 		
-		public function isMyoTrained(myo:Myo):Boolean
+		public function setStreamEMG(id:String, enabled:Boolean):void 
 		{
-			return extContext.call("isMyoTrained", myo.id) as Boolean;
+			//trace("[MyoController] vibrate");
+			extContext.call("setStreamEMG", id, enabled);
+		}
+		
+		
+		  
+		public function setLock(id:String, locked:Boolean, permanentUnlock:Boolean = false):void 
+		{
+			//trace("[MyoController] vibrate");
+			extContext.call("setLock", id, locked, permanentUnlock);
 		}
 		
 		private function getMyoByID(id:String):Myo
@@ -145,8 +174,9 @@ package benkuper.nativeExtensions
 				return;
 			}
 			
-			updateTimer.reset();
+			
 			updateTimer.removeEventListener(TimerEvent.TIMER, updateTimerHandler);
+			updateTimer.reset();
 			updateTimer = null;
 			
 			extContext.removeEventListener(StatusEvent.STATUS, onStatus);

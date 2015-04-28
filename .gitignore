@@ -10,3 +10,6 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 ane_src/native_src/Windows-x86/MyoExtension/Debug/
+ane_src/native_src/Windows-x86/MyoExtension/Release/
+*.suo
+*.sdf

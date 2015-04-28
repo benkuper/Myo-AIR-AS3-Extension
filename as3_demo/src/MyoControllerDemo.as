@@ -6,6 +6,8 @@ package
 	import flash.display.Graphics;
 	import flash.display.Shape;
 	import flash.display.Sprite;
+	import flash.events.KeyboardEvent;
+	import flash.ui.Keyboard;
 	
 	/**
 	 * ...
@@ -28,15 +30,54 @@ package
 			g.y =  100;
 			myoController = new MyoController();
 			myoController.addEventListener(MyoEvent.MYO_PAIRED, myoPaired);
+			myoController.setLockingPolicy(false);
+			
+			stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDown);
+		}
+		
+		private function keyDown(e:KeyboardEvent):void 
+		{
+			switch(e.keyCode)
+			{
+				case Keyboard.L:
+					myo.setLock(true);
+					break;
+					
+				case Keyboard.U:
+					myo.setLock(false,e.shiftKey);
+					break;
+					
+				case Keyboard.P:
+					trace("set locking policy");
+					myoController.setLockingPolicy(e.shiftKey);
+					break;
+					
+				case Keyboard.V:
+					myo.vibrate(e.shiftKey?Myo.VIBRATION_LONG:Myo.VIBRATION_SHORT);
+					break;
+				
+				case Keyboard.E:
+					myo.setStreamEMG(e.shiftKey);
+					break;
+				
+			}
 		}
 		
 		private function myoPaired(e:MyoEvent):void 
 		{
+			trace("Myo is paired");
 			myo = e.myo;
+			myo.setLock(false);
 			myo.addEventListener(MyoEvent.MYO_CONNECTED, myoConnected);
 			myo.addEventListener(MyoEvent.MYO_DISCONNECTED, myoDisconnected);
 			myo.addEventListener(MyoEvent.ORIENTATION_UPDATE, myoOrientationUpdate);
 			myo.addEventListener(MyoEvent.POSE_UPDATE, myoPoseUpdate);
+			myo.addEventListener(MyoEvent.EMGDATA_UPDATE, myoEmgDataUpdate);
+		}
+		
+		private function myoEmgDataUpdate(e:MyoEvent):void 
+		{
+			trace("Main :: emg data update !", e.myo.emgData);
 		}
 		
 		private function myoConnected(e:MyoEvent):void 
@@ -55,7 +96,7 @@ package
 			
 			g.graphics.clear();
 			g.graphics.beginFill(color);
-			g.graphics.drawRect(0, 0, e.myo.yaw*50,20);
+			g.graphics.drawRect(0, 20, e.myo.yaw*50,20);
 
 			g.graphics.drawRect(0, 50, e.myo.pitch * 50, 20);
 			
@@ -73,8 +114,6 @@ package
 			
 			
 			g.graphics.endFill();
-			
-			
 			
 		}
 		
@@ -106,7 +145,7 @@ package
 					color = 0x00ff00;
 					break;
 					
-				case Myo.POSE_TWIST_IN:
+				case Myo.POSE_DOUBLE_TAP:
 					color = 0xff00ff;
 					break;
 			}

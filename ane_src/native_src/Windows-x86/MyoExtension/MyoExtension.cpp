@@ -14,6 +14,8 @@ using namespace myo;
 pthread_t runThread;
 bool exitRunThread;
 
+
+
 class MyoData
 {
 	public :
@@ -29,11 +31,16 @@ class MyoData
 	double accel[3];
 	double gyro[3];
 
+	int8_t emgData[8];
+	bool emgEnabled;
+
 	bool connected;
 	
 };
 
 vector<MyoData *> myoDatas;
+
+
 
 string getMyoID(Myo *myo)
 {
@@ -41,9 +48,32 @@ string getMyoID(Myo *myo)
 	return std::to_string((int)myo);
 }
 
-MyoData * getMyoData(Myo * myo)
+MyoData * addMyo(Myo * myo)
 {
-	
+	printf("* Add Myo\n");
+	MyoData * data = new MyoData();
+	data->myo = myo;
+	data->id = getMyoID(myo); //->macAddressAsString();
+	data->yaw = 0;
+	data->pitch = 0;
+	data->roll = 0;
+	data->pose = "rest";
+	myoDatas.push_back(data);
+
+	data->emgEnabled = false;
+	for(int i=0;i<8;i++) data->emgData[i] = 0;
+
+	//myo->setStreamEmg(Myo::streamEmgEnabled);
+
+	return data;
+}
+
+
+
+MyoData * getMyoData(Myo * myo, bool createIfNotExist = true)
+{	
+	if(exitRunThread) return NULL;
+
 	for (size_t i = 0; i < myoDatas.size(); ++i) {
         // If two Myo pointers compare equal, they refer to the same Myo device.
 		if (myoDatas[i]->myo == myo) {
@@ -51,12 +81,14 @@ MyoData * getMyoData(Myo * myo)
         }
     }
 
-	printf("Myo Not found by mac address : %s\n",getMyoID(myo).c_str());
+	if(createIfNotExist) return addMyo(myo);
+	printf("Myo Not found by handle : %s\n",getMyoID(myo).c_str());
 	return NULL;
 }
 
 int getMyoIndex(Myo *myo)
 {
+	if(exitRunThread) return -1;
 
 	for (size_t i = 0; i < myoDatas.size(); ++i) {
         // If two Myo pointers compare equal, they refer to the same Myo device.
@@ -72,6 +104,7 @@ int getMyoIndex(Myo *myo)
 
 MyoData * getMyoByMacAddress(const char * macAddress)
 {
+	if(exitRunThread) return NULL;
 	//printf("Get Myo by aAddress : %s\n",macAddress);
 	for (size_t i = 0; i < myoDatas.size(); ++i) {
         // If two Myo pointers compare equal, they refer to the same Myo device.
@@ -84,8 +117,11 @@ MyoData * getMyoByMacAddress(const char * macAddress)
 	return NULL;
 }
 
+
+
 void removeMyo(Myo * myo)
 {
+	printf("Remove Myo\n");
 	int id = getMyoIndex(myo);
 	if(id != -1) myoDatas.erase(myoDatas.begin()+id);
 }
@@ -102,21 +138,24 @@ public:
 	void onPair(myo::Myo* myo, uint64_t timestamp, FirmwareVersion firmwareVersion)
     {
 		printf("Myo onPair \n");
-		MyoData * data = new MyoData();
-		data->myo = myo;
-		data->id = getMyoID(myo); //->macAddressAsString();
-		data->yaw = 0;
-		data->pitch = 0;
-		data->roll = 0;
-		data->pose = "rest";
-		myoDatas.push_back(data);
-		
+		addMyo(myo);
+
 		// Now that we've added it to our list, get our short ID for it and print it out.
-		printf("=> assigned ID : %s\n",data->id.c_str());
+		//printf("=> assigned ID : %s\n",data->id.c_str());
 
     }
 
 	
+
+	void onEmgData(Myo *myo, uint64_t timestamp, const int8_t * emg)
+	{
+		//printf("Got emg data \n");
+		MyoData * mData = getMyoData(myo);
+		if(mData != NULL)
+		{
+			for(int i=0;i<8;i++) mData->emgData[i] = emg[i];
+		}
+	}
 
 	void onUnpair (Myo *myo, uint64_t timestamp)
 	{
@@ -137,15 +176,15 @@ public:
 		printf("Myo %s has disconnected\n",getMyoID(myo).c_str());
 		MyoData * mData = getMyoData(myo);
 		if(mData != NULL) mData->connected = false;
+
     }
 
     void onPose(Myo* myo, uint64_t timestamp, myo::Pose pose)
     {
 		
 		printf("Myo %s has detected pose : %s\n",getMyoID(myo).c_str(),pose.toString().c_str());
-		
 		MyoData * mData = getMyoData(myo);
-		mData->pose = pose.toString();
+		if(mData != NULL) mData->pose = pose.toString();
 		
     }
 
@@ -157,6 +196,12 @@ public:
     // as a unit quaternion.
     void onOrientationData(Myo* myo, uint64_t timestamp, const Quaternion<float>& quat)
     {
+		//printf("Orientation data\n");
+
+		MyoData * mData = getMyoData(myo);
+		if(mData == NULL) return;
+
+
         using std::atan2;
         using std::asin;
         using std::sqrt;
@@ -170,8 +215,7 @@ public:
         double yaw = atan2(2.0f * (quat.w() * quat.z() + quat.x() * quat.y()),
                         1.0f - 2.0f * (quat.y() * quat.y() + quat.z() * quat.z()));
 
-		MyoData * mData = getMyoData(myo);
-
+		
 		mData->yaw = yaw;
 		mData->pitch = pitch;
 		mData->roll = roll;
@@ -202,28 +246,57 @@ public:
 };
 
 
-
-
+MyoListener * mListener;
+Hub * hub = NULL;
+bool hubIsReady = false;
+bool hubWaitingForInit = true;
 //Run thread
 
 void *MyoRunThread(FREContext ctx)
 {
 	printf("myo run thread creation and init !\n");
-	myo::Hub hub;
-	//hub.addMyo(
-	printf("Hub :: pairWithAnyMyo\n");
+	
+	hubIsReady = false;
+	hubWaitingForInit = true;
 
-	MyoListener mListener;
-	hub.addListener(&mListener);
+	try
+	{
+	
+		printf("Add listener\n");
+		hub = new Hub();
+		mListener = new MyoListener();
+		hub->addListener(mListener);
+		hubWaitingForInit = false;
+	}catch(exception e)
+	{
+		printf("Error creating Hub or Listener : %s\n",e.what());
+		FREDispatchStatusEventAsync(ctx,(const uint8_t*)"error",(const uint8_t *)"connect");
+		hubWaitingForInit = false;
+		return 0;
+	}
 
-   while(!exitRunThread)
-   {
-	   hub.run(10);
+	hubWaitingForInit = false;
+	hubIsReady = true;
 
-	   //FREDispatchStatusEventAsync(ctx,(const uint8_t *)"data",(const uint8_t *)"myo");
-   }
+	printf("Hub is ready, Launch Hub run loop\n");
+	while(!exitRunThread)
+	{
+		try
+		{
+			hub->run(10);
+		}catch(exception e)
+		{
+			printf("Error running hub : %s\n",e.what());
+		}
+	}
 
+	//hub->removeListener(&mListener);
+	int val = 0;
+	//pthread_exit(&val);
+	
    printf("Exit Run Thread !\n");
+   hub = NULL;
+	mListener = NULL;
    return 0;
 }
 
@@ -233,7 +306,8 @@ extern "C"
 	FREObject init(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
 	{
 		
-		printf("Myo Extension :: init\n");
+		printf("MyoExtension :: init\n");
+
 		bool success = true;
 
 		try
@@ -260,10 +334,10 @@ extern "C"
 
 	FREObject updateAllMyoData(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
 	{
-		if(exitRunThread) return NULL; //thread is exiting or already exited
+		if(exitRunThread || !hubIsReady) return NULL; //thread is exiting or already exited
 
-		//printf("Update Native\n");
-		
+		//return NULL; //temp
+
 		FREObject controller = argv[0];
 
 
@@ -273,7 +347,6 @@ extern "C"
 		
 			//printf("update Myo %i --> ",i);
 			MyoData * mData = myoDatas[i];
-
 
 			const uint8_t * mID = reinterpret_cast<const uint8_t*>(&(mData->id.c_str())[0]);
 			int midl = mData->id.length(); //to change
@@ -303,10 +376,23 @@ extern "C"
 			FRENewObjectFromDouble(mData->gyro[1],&data[10]); //gyroY
 			FRENewObjectFromDouble(mData->gyro[2],&data[11]); //gyroZ
 
-
+			 
 			FREObject res;
 			FREResult fre = FRECallObjectMethod(controller,(const uint8_t*)"updateMyoData",numParameters,data,&res,NULL); //AS3 updateMyoData(id:String,pose:String,yaw:Number,pitch:Number,roll:Number)
 			 
+			if(mData->emgEnabled)
+			{
+				FREObject emgData[9];
+				FRENewObjectFromUTF8(midl,mID,&emgData[0]); //id
+				for(int e=0;e<8;e++) 
+				{
+					//printf("%i, ",mData->emgData[e]);// 
+					FRENewObjectFromInt32(mData->emgData[e],&emgData[e+1]);
+				}
+				//printf("\n");
+				fre = FRECallObjectMethod(controller,(const uint8_t*)"updateMyoEmgData",9,emgData,&res,NULL); //AS3 updateMyoEmgData(data1:int,data2:int,...,data8:int)
+			}
+
 			//printf("Call method : %i\n",fre);
 		}
 		
@@ -317,52 +403,132 @@ extern "C"
 		
 	}
 
+	FREObject setStreamEMG(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
+	{
+		bool mResult = false;
+		const uint8_t* macAddress;
+		uint32_t macLength;
+		FREGetObjectAsUTF8(argv[0],&macLength,&macAddress);
+
+		uint32_t enabled;
+		FREGetObjectAsBool(argv[1], &enabled);
+		Myo * myo = getMyoByMacAddress((const char *)macAddress)->myo;
+
+		if(myo != NULL)
+		{
+			myo->setStreamEmg(enabled > 0?Myo::streamEmgEnabled:Myo::streamEmgDisabled);
+			
+			MyoData * mData = getMyoData(myo);
+			mData->emgEnabled = enabled > 0;
+
+			mResult = true;
+		}
+			
+		FREObject result;
+		FRENewObjectFromBool(mResult,&result);
+		return result;
+	}
+
+
+	FREObject setLockingPolicy(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
+	{
+		
+		uint32_t lockPolicy;
+		FREGetObjectAsBool(argv[0], &lockPolicy);
+		printf("Set locking Policy %s\n",lockPolicy?"standard":"none");
+
+		bool success = true;
+		while(hubWaitingForInit)
+		{
+			//do nothing
+			printf("waiting for init... %i\n",hubIsReady);
+		}
+
+		if(hubIsReady)
+		{
+			printf("hub is ready, lock here\n");
+			hub->setLockingPolicy(lockPolicy?Hub::lockingPolicyStandard:Hub::lockingPolicyNone);
+		}else
+		{
+			printf("Hub is not ready\n");
+			success = false;
+		}
+
+		FREObject result;
+		FRENewObjectFromBool(success,&result);
+		return result;
+	}
+
+
+
+	FREObject setLock(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
+	{
+		bool mResult = false;
+		const uint8_t* macAddress;
+		uint32_t macLength;
+		FREGetObjectAsUTF8(argv[0],&macLength,&macAddress);
+
+		uint32_t enabled;
+		FREGetObjectAsBool(argv[1], &enabled);
+
+		uint32_t type;
+		FREGetObjectAsBool(argv[2], &type);
+		
+
+		Myo * myo = getMyoByMacAddress((const char *)macAddress)->myo;
+
+		if(myo != NULL)
+		{
+			if(enabled) myo->lock();
+			else myo->unlock(type?Myo::unlockTimed:Myo::unlockHold);
+			mResult = true;
+		}
+			
+		FREObject result;
+		FRENewObjectFromBool(mResult,&result);
+		return result;
+	}
+
+
+	
 	FREObject vibrate(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
 	{
+			bool mResult = false;
+
 			const uint8_t* macAddress;
 			uint32_t macLength;
 			FREGetObjectAsUTF8(argv[0],&macLength,&macAddress);
 			Myo * myo = getMyoByMacAddress((const char *)macAddress)->myo;
+
+			if(myo != NULL)
+			{
+				int vibType;
+				FREGetObjectAsInt32(argv[1],&vibType);
+				Myo::VibrationType vibrationType = myo->vibrationShort; //safe assigning
+
+				if(vibType == 0) vibrationType = myo->vibrationShort;
+				else if(vibType == 1) vibrationType = myo->vibrationMedium;
+				else if(vibType == 2) vibrationType = myo->vibrationLong;
+
+				myo->vibrate(vibrationType);
+				mResult = true;
+			}
 			
-			int vibType;
-			FREGetObjectAsInt32(argv[1],&vibType);
-			Myo::VibrationType vibrationType = myo->vibrationShort; //safe assigning
-
-			if(vibType == 0) vibrationType = myo->vibrationShort;
-			else if(vibType == 1) vibrationType = myo->vibrationMedium;
-			else if(vibType == 2) vibrationType = myo->vibrationLong;
-
-			myo->vibrate(vibrationType);
-
 			FREObject result;
-			FRENewObjectFromBool(true,&result);
+			FRENewObjectFromBool(mResult,&result);
 			return result;
 	}
-
-	FREObject isMyoTrained(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
-	{
-		/*
-			const uint8_t* macAddress;
-			uint32_t macLength;
-			FREGetObjectAsUTF8(argv[0],&macLength,&macAddress);
-
-			Myo * myo = getMyoByMacAddress((const char *)macAddress)->myo;
-			*/
-
-			FREObject result;
-			FRENewObjectFromBool(true,&result);
-			return result;
-	}
-
 
 	FREObject clean(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
 	{
 		printf("Clean !\n");
 		exitRunThread = true;
-		
-		/*try
+		mListener = NULL;
+		hub = NULL;
+		/*
+		try
 		{
-			pthread_cancel(&runThread);
+			pthread_cancel(runThread);
 		}catch(exception e)
 		{
 			printf("Thread already exited !");
@@ -377,14 +543,14 @@ extern "C"
 	// Flash Native Extensions stuff
 	void MyoContextInitializer(void* extData, const uint8_t* ctxType, FREContext ctx, uint32_t* numFunctionsToSet,  const FRENamedFunction** functionsToSet) { 
 
-		printf("** MyoExtension v0.5 by Ben Kuper **\n\n");
-
-		*numFunctionsToSet = 5; 
+		printf("MyoExtension v0.8.1 by Ben kuper, based on MyoSDK v0.8.1\n");
+		
+		*numFunctionsToSet = 7; 
 
  
 		FRENamedFunction* func = (FRENamedFunction*)malloc(sizeof(FRENamedFunction)*2); 
 
-		func[0].name = (const uint8_t*)"init"; 
+		func[0].name = (const uint8_t*)"init";  
 		func[0].functionData = NULL; 
 		func[0].function = &init; 
 		
@@ -396,13 +562,23 @@ extern "C"
 		func[2].functionData = NULL; 
 		func[2].function = &vibrate; 
 
-		func[3].name = (const uint8_t*)"isMyoTrained"; 
-		func[3].functionData = NULL; 
-		func[3].function = &isMyoTrained; 
 
-		func[4].name = (const uint8_t*)"stop"; 
+		func[3].name = (const uint8_t*)"stop"; 
+		func[3].functionData = NULL; 
+		func[3].function = &clean; 
+
+		func[4].name = (const uint8_t*)"setStreamEMG"; 
 		func[4].functionData = NULL; 
-		func[4].function = &clean; 
+		func[4].function = &setStreamEMG; 
+		
+		func[5].name = (const uint8_t*)"setLockingPolicy"; 
+		func[5].functionData = NULL; 
+		func[5].function = &setLockingPolicy; 
+		
+		func[6].name = (const uint8_t*)"setLock"; 
+		func[6].functionData = NULL; 
+		func[6].function = &setLock; 
+		
 		
 		*functionsToSet = func; 
 	}
@@ -411,13 +587,6 @@ extern "C"
 	void MyoContextFinalizer(FREContext ctx) 
 	{
 		exitRunThread = true;
-		try
-		{
-			pthread_cancel(runThread);
-		}catch(exception e)
-		{
-			printf("Thread already exited !");
-		}
 		return;
 	}
 

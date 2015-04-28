@@ -16,7 +16,7 @@ package benkuper.nativeExtensions
 		static public const POSE_WAVE_IN:String = "waveIn";
 		static public const POSE_WAVE_OUT:String = "waveOut";
 		static public const POSE_FINGERS_SPREAD:String = "fingersSpread";
-		static public const POSE_TWIST_IN:String = "thumbToPinky";
+		static public const POSE_DOUBLE_TAP:String = "doubleTap";
 		private var _pose:String;
 		
 		static public const VIBRATION_SHORT:int = 0;
@@ -25,7 +25,6 @@ package benkuper.nativeExtensions
 		
 		private var _id:String;
 		private var _connected:Boolean;
-		public var isTrained:Boolean;
 		
 		public var yaw:Number;
 		public var pitch:Number;
@@ -34,17 +33,25 @@ package benkuper.nativeExtensions
 		public var accel:Vector.<Number>;
 		public var gyro:Vector.<Number>;
 		
+		public var emgData:Vector.<int>;
+		
 		public function Myo(id:String):void
 		{
+			
 			this._id = id;
 			accel = new Vector.<Number>;
 			gyro = new Vector.<Number>;
 			_pose = POSE_NONE;
-			for (var i:int = 0; i < 3; i++)
+			
+			var i:int; 
+			for (i = 0; i < 3; i++)
 			{
 				accel.push(0);
 				gyro.push(0);
 			}
+			
+			emgData = new Vector.<int>(8);
+			for (i = 0; i < emgData.length; i++) emgData[i] = 0;
 		}
 		
 		public function updateData(connected:Boolean,pose:String, y:Number,p:Number,r:Number, ax:Number,ay:Number,az:Number,gx:Number,gy:Number,gz:Number):void
@@ -66,11 +73,33 @@ package benkuper.nativeExtensions
 			dispatchEvent(new MyoEvent(MyoEvent.ORIENTATION_UPDATE,this));  
 		}
 		
+		public function updateEmgData(data:Array):void 
+		{
+			for (var i:int = 0; i < emgData.length; i++) emgData[i] = data[i];
+			dispatchEvent(new MyoEvent(MyoEvent.EMGDATA_UPDATE, this));
+		}
+		
+		
 		public function vibrate(vibrationType:int = VIBRATION_SHORT):void
 		{
 			MyoController.instance.vibrate(this.id, vibrationType);
 		}
 		
+		
+		
+		public function setStreamEMG(enabled:Boolean):void 
+		{
+			//trace("[MyoController] vibrate");
+			MyoController.instance.setStreamEMG(this.id, enabled);
+		}
+		
+		
+		
+		public function setLock(locked:Boolean, permanentUnlock:Boolean = false):void 
+		{
+			//trace("[MyoController] vibrate");
+			MyoController.instance.setLock(this.id, locked,permanentUnlock);
+		}
 		
 		//Getter / setter
 		
@@ -108,6 +137,7 @@ package benkuper.nativeExtensions
 		{
 			return "[Myo id(macAddress)=" + id + ", connected="+connected+", yaw/pitch/roll=" + yaw + "/" + pitch + "/" + roll + ", pose=" + pose + "]";
 		}
+		
 		
 		
 	}

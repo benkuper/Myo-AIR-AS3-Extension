@@ -3,6 +3,11 @@ set PAUSE_ERRORS=1
 call bat\SetupSDK.bat
 call bat\SetupApplication.bat
 
+cd ..\ane_src
+call swcCompiler_win_mac.bat
+cd ..\as3_demo
+call copyANE.bat
+
 echo.
 echo Starting AIR Debug Launcher...
 echo.
@@ -14,4 +19,4 @@ goto end
 :error
 pause
 
-:end
+:end 

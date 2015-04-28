@@ -17,6 +17,7 @@ package  benkuper.nativeExtensions
 		static public const STATUS_UPDATE:String = "statusUpdate";
 		static public const ORIENTATION_UPDATE:String = "orientationUpdate";
 		static public const POSE_UPDATE:String = "poseUpdate";
+		static public const EMGDATA_UPDATE:String = "emgDataUpdate";
 		
 		
 		
